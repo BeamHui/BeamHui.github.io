@@ -274,6 +274,13 @@ Describe：长城会G-Home，全球首家专业的机器人孵化器,致力于�
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/30/2015-07-26/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/30/2015-07-26/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -356,11 +363,33 @@ Describe：长城会G-Home，全球首家专业的机器人孵化器,致力于�
 
 
           </div>
-          
-
+          <% if (!index && post.comments && config.duoshuo_shortname){ %>
+<section id="comments">
+  <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+       || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- 多说公共JS代码 end -->
+</section>
+<% } %>
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/30/2015-07-26/"
+           data-title="长城会Ghome孵化器 | 智能硬件开发到底难不难" data-url="http://beamhui.com/2016/07/30/2015-07-26/">
+      </div>
     
   </div>
 
@@ -579,9 +608,30 @@ Describe：长城会G-Home，全球首家专业的机器人孵化器,致力于�
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"beAm"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
 
 
 

@@ -275,6 +275,13 @@ Describe：西湖创客汇就是杭州地区的创客空间，主旨为青年•
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/23/2016-07-23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/2016-07-23/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -329,12 +336,16 @@ Describe：西湖创客汇就是杭州地区的创客空间，主旨为青年•
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/07/23/2016-07-30/" rel="next" title="Fab Lab | 中大新华创客 WokrShop">
+                <i class="fa fa-chevron-left"></i> Fab Lab | 中大新华创客 WokrShop
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/23/2016-07-30/" rel="prev" title="Fab Lab | 中大新华创客 WokrShop">
-                Fab Lab | 中大新华创客 WokrShop <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/30/2015-12-18/" rel="prev" title="微软MicroSoft | 漫步云端Axure">
+                微软MicroSoft | 漫步云端Axure <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -355,11 +366,33 @@ Describe：西湖创客汇就是杭州地区的创客空间，主旨为青年•
 
 
           </div>
-          
-
+          <% if (!index && post.comments && config.duoshuo_shortname){ %>
+<section id="comments">
+  <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+       || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- 多说公共JS代码 end -->
+</section>
+<% } %>
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/23/2016-07-23/"
+           data-title="西湖创客汇 | 开源硬件DIY－实现对植物的远程监控" data-url="http://beamhui.com/2016/07/23/2016-07-23/">
+      </div>
     
   </div>
 
@@ -578,9 +611,30 @@ Describe：西湖创客汇就是杭州地区的创客空间，主旨为青年•
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"beAm"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
 
 
 
