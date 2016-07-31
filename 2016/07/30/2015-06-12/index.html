@@ -16,6 +16,18 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<% if (theme.baidu_analytics) { %>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?54d4fc5d0a53b8bd6a09f5b2a1240d38";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<%- partial("baidu_analytics") %>
+<% } %>
 
 
 
@@ -80,7 +92,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/icon.ico?v=5.0.1" />
 
 
-<%- partial("baidu_analytics") %>
+
 
 
 

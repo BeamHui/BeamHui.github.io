@@ -16,6 +16,18 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<% if (theme.baidu_analytics) { %>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?54d4fc5d0a53b8bd6a09f5b2a1240d38";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<%- partial("baidu_analytics") %>
+<% } %>
 
 
 
@@ -80,7 +92,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/icon.ico?v=5.0.1" />
 
 
-<%- partial("baidu_analytics") %>
+
 
 
 
@@ -329,16 +341,12 @@ Describe： 经过美国麻省理工学院（MIT）Fab Lab审核，中山大学�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/23/2016-07-23/" rel="next" title="西湖创客汇 | 开源硬件DIY－实现对植物的远程监控">
-                <i class="fa fa-chevron-left"></i> 西湖创客汇 | 开源硬件DIY－实现对植物的远程监控
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/30/2015-12-18/" rel="prev" title="微软MicroSoft | 漫步云端Axure">
-                微软MicroSoft | 漫步云端Axure <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/23/2016-07-23/" rel="prev" title="西湖创客汇 | 开源硬件DIY－实现对植物的远程监控">
+                西湖创客汇 | 开源硬件DIY－实现对植物的远程监控 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
